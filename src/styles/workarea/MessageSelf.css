@@ -1,0 +1,16 @@
+.self-message-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.messagebox {
+    display: flex;
+    flex-direction: column;
+    background-color: #63d7b0;
+    /* background-color: #9EA8DB; */
+    width: max-content;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

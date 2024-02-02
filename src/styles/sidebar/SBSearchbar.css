@@ -1,0 +1,15 @@
+.searchbar {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    outline-width: 0;
+    border: none;
+    font-size: 1.25rem;
+    margin-left: 10px;
+}

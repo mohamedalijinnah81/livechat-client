@@ -1,0 +1,16 @@
+.chatarea-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.chatarea-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
