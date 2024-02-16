@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './../styles/MainContainer.css'
 import Sidebar from './sidebar/Sidebar'
 import ChatArea from './workarea/ChatArea'
+import WelcomePage from './others/WelcomePage'
+import CreateGroups from './others/CreateGroups'
 
 const MainContainer = () => {
     const [chatData, setChatData] = useState([
@@ -32,6 +34,8 @@ const MainContainer = () => {
         <Sidebar 
             chatData={chatData}
         />
+        {/* <WelcomePage /> */}
+        {/* <CreateGroups /> */}
         <ChatArea 
             chatData = {chatData[0]}
         />
