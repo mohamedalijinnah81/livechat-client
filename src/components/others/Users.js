@@ -7,11 +7,11 @@ import './../../styles/sidebar/ConversationItem.css'
 import logo from '../../images/live-chat.png'
 import SBSearchbar from '../sidebar/SBSearchbar'
 
-const UsersAndGroups = () => {
+const Users = () => {
   return (
     <div className='list-container'>
         <div className="ug-header">
-            <img src={logo} alt="Logo" style={{height: "2rem", width: "2rem"}} />
+            <img src={logo} alt="Logo" style={{height: "2rem", width: "2rem", marginLeft: "10px"}} />
             <p className='ug-title'>Online Users</p>
         </div>
         <SBSearchbar />
@@ -69,4 +69,4 @@ const UsersAndGroups = () => {
   )
 }
 
-export default UsersAndGroups
+export default Users

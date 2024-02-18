@@ -6,8 +6,11 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import { IconButton } from '@mui/material';
 import './../../styles/sidebar/SBHeader.css'
+import { useNavigate } from 'react-router-dom';
 
 const SBHeader = () => {
+    const navigate = useNavigate();
+
   return (
     <div className='sb-header'>
        <div className="profile">
@@ -16,13 +19,19 @@ const SBHeader = () => {
             </IconButton>
        </div>
        <div className="nav-links">
-            <IconButton>
+            <IconButton onClick={() => {
+                navigate('users');
+            }}>
                 <PersonAddIcon />
             </IconButton>
-            <IconButton>
+            <IconButton onClick={() => {
+                navigate('groups');
+            }}>
                 <GroupAddIcon />
             </IconButton>
-            <IconButton>
+            <IconButton onClick={() => {
+                navigate('creategroups')
+            }}>
                 <AddCircleIcon />
             </IconButton>
             <IconButton>

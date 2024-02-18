@@ -4,13 +4,13 @@ import '../../styles/sidebar/ConversationItem.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from '@mui/material';
 
-const CAHeader = ({ chatData }) => {
+const CAHeader = ({ props }) => {
   return (
     <div className='chatarea-header'>
-        <p className='convo-icon'>{chatData.name[0]}</p>
+        <p className='convo-icon'>{props.name[0]}</p>
         <div className="chatarea-header-text">
-            <p className='convo-title'>{chatData.name}</p>
-            <p className='convo-timestamp'>{chatData.timeStamp}</p>
+            <p className='convo-title'>{props.name}</p>
+            <p className='convo-timestamp'>{props.timeStamp}</p>
         </div>
         <IconButton>
             <DeleteIcon />

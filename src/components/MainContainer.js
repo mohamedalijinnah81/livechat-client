@@ -1,46 +1,28 @@
 import React, { useState } from 'react'
 import './../styles/MainContainer.css'
 import Sidebar from './sidebar/Sidebar'
-import ChatArea from './workarea/ChatArea'
+import WorkArea from './workarea/WorkArea'
 import WelcomePage from './others/WelcomePage'
 import CreateGroups from './others/CreateGroups'
-import UsersAndGroups from './others/UsersAndGroups'
+import Users from './others/Users'
+import { Outlet } from 'react-router-dom'
+import Groups from './others/Groups'
+
 
 const MainContainer = () => {
-    const [chatData, setChatData] = useState([
-        {
-            name: "Jinnah",
-            lastMessage: "Hey byy",
-            timeStamp: "online"
-        }, 
-        {
-            name: "Mohamed",
-            lastMessage: "How are you",
-            timeStamp: "yesterday"
-        }, 
-        {
-            name: "Ali",
-            lastMessage: "Byy",
-            timeStamp: "yesterday"
-        }, 
-        {
-            name: "Sa",
-            lastMessage: "Active now",
-            timeStamp: "today"
-        }
-    ])
 
   return (
     <div className='main-container'>
-        <Sidebar 
-            chatData={chatData}
-        />
+        <Sidebar />
+        <Outlet />
+        {/* <Groups /> */}
+        {/* <Outlet /> */}
         {/* <WelcomePage /> */}
         {/* <CreateGroups /> */}
         {/* <ChatArea 
             chatData = {chatData[0]}
         /> */}
-        <UsersAndGroups />
+        {/* <Users /> */}
     </div>
   )
 }
