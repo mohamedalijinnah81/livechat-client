@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import './styles/DarkTheme.css'
 import Login from './components/Login';
 import MainContainer from './components/MainContainer';
 import WelcomePage from './components/others/WelcomePage';
@@ -7,10 +8,13 @@ import Users from './components/others/Users';
 import CreateGroups from './components/others/CreateGroups';
 import WorkArea from './components/workarea/WorkArea';
 import Groups from './components/others/Groups';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const lightTheme = useSelector((state) => state.themeKey);
+
   return (
-    <div className="App">
+    <div className={'App' + ((lightTheme) ? '' : ' dark-app')}>
       {/* <MainContainer /> */}
       {/* <Login /> */}
       <Routes>

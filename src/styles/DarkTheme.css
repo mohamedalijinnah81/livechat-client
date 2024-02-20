@@ -1,0 +1,15 @@
+.dark {
+    /* background-color: #2d3941 !important; */
+    background-color: #334046 !important;
+    color: whitesmoke !important;
+    /* transition-duration: 0.5s; */
+}
+
+.dark-container {
+    background-color: #2A3034 !important;
+    color: whitesmoke !important;
+}
+
+.dark-app {
+    background-color: #171E21 !important;
+}

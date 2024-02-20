@@ -17,6 +17,10 @@
     flex-direction: column;
 }
 
+.others-text-content .convo-title {
+    color: rgba(0, 0, 0, 0.54);
+}
+
 .self-timestamp {
     align-self: flex-end;
     font-size: 0.75rem;
