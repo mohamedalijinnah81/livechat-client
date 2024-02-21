@@ -1,0 +1,10 @@
+@media only screen and (max-width: 40em) {
+    .chat-area, .list-container {
+        flex: 1 !important;
+    }
+
+    .main-container {
+        height: 100vh;
+        width: 100vw;
+    }
+}

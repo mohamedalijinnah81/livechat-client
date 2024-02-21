@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './../../styles/workarea/ChatArea.css'
+import './../../styles/workarea/MobileChatArea.css'
 import CAHeader from './CAHeader'
 import CAMessagesContainer from './CAMessagesContainer'
 import CATextInputArea from './CATextInputArea'

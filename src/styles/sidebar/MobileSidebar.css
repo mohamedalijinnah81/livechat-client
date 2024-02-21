@@ -1,0 +1,31 @@
+@media only screen and (max-width: 40em) { 
+    .searchbar {
+        display: none !important;
+    }
+
+    .sb-conversations {
+        display: none;
+    }
+
+    .sb-header {
+        flex-direction: column;
+        flex: 1;
+        width: min-content;
+        justify-content: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .sidebar {
+        flex: 0;
+    }
+
+    #chat-icon {
+        /* background-color: #000 !important; */
+        display: block !important;
+    }
+}

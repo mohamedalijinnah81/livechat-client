@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './../styles/MainContainer.css'
 import '../styles/DarkTheme.css'
+import './../styles/workarea/MobileChatArea.css'
 import Sidebar from './sidebar/Sidebar'
 import WorkArea from './workarea/WorkArea'
 import WelcomePage from './others/WelcomePage'

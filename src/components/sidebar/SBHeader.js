@@ -5,6 +5,7 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import ChatIcon from '@mui/icons-material/Chat';
 import { IconButton } from '@mui/material';
 import './../../styles/sidebar/SBHeader.css'
 import '../../styles/DarkTheme.css'
@@ -19,12 +20,20 @@ const SBHeader = () => {
 
   return (
     <div className={'sb-header' + ((lightTheme) ? '' : ' dark')}>
-       <div className="profile">
+       {/* <div className="profile">
             <IconButton>
                 <AccountCircleIcon className={'icon' + ((lightTheme) ? '' : ' dark')} />
             </IconButton>
-       </div>
+       </div> */}
        <div className="nav-links">
+            <IconButton>
+                <AccountCircleIcon className={'icon' + ((lightTheme) ? '' : ' dark')} />
+            </IconButton>
+            <IconButton id='chat-icon' onClick={() => {
+                navigate('chat');
+            }}>
+                <ChatIcon className={'icon' + ((lightTheme) ? '' : ' dark')} />
+            </IconButton>
             <IconButton onClick={() => {
                 navigate('users');
             }}>

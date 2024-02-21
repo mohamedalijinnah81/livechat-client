@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './../../styles/sidebar/Sidebar.css'
+import '../../styles/sidebar/MobileSidebar.css'
 import SBHeader from './SBHeader'
 import SBSearchbar from './SBSearchbar'
 import SBConversations from './SBConversations'
