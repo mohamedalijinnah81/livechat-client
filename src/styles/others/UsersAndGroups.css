@@ -27,6 +27,7 @@
     overflow: scroll;
     scrollbar-width: none;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .ug-list::-webkit-scrollbar {
@@ -42,14 +43,15 @@
     border-radius: 20px;
     padding: 10px 5px;
     margin: 10px;
-    transition-duration: 0.5s;
+    /* cursor: pointer; */
+    /* transition-duration: 0.5s; */
 }
 
-.ug-listitem:hover {
+/* .ug-listitem:hover {
     background-color: rgb(226, 226, 226) !important;
     color: rgba(0, 0, 0, 0.54) !important;
     cursor: pointer !important;
-}
+} */
 
 .ug-listitem:active {
     background-color: #fff;

@@ -11,8 +11,8 @@
 }
 
 .conversation-container:hover {
-    background-color: #d9d9d9 !important;
-    color: rgba(0, 0, 0, 0.54) !important;
+    background-color: #1F1F1F !important;
+    /* color: rgba(0, 0, 0, 0.54) !important; */
     cursor: pointer !important;
 }
 
