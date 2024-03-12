@@ -20,6 +20,7 @@
     margin-left: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    width: 100%;
 }
 
 .ug-list {
@@ -59,5 +60,11 @@
 
 .ug-listitem p {
     margin-left: 6px;
+}
+
+.ug-header .icon {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-right: 10px;
 }
 

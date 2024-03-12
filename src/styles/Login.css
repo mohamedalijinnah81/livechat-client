@@ -33,3 +33,21 @@
     font-size: 1.6rem;
     margin-bottom: 20px;
 }
+
+.hyper {
+    color: darkviolet;
+    text-decoration: underline;
+    font-size: 0.9em !important;
+    cursor: pointer;
+}
+
+.login-signup-switch {
+    font-size: 1.2em !important;
+}
+
+/* .login-btn {
+    border-color: #63d7b0;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: red;
+} */

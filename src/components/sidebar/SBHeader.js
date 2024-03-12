@@ -5,6 +5,7 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import ChatIcon from '@mui/icons-material/Chat';
 import { IconButton } from '@mui/material';
 import './../../styles/sidebar/SBHeader.css'
@@ -55,7 +56,14 @@ const SBHeader = () => {
                 {!lightTheme && <LightModeIcon className={'icon' + ((lightTheme) ? '' : ' dark')} />}
                 
             </IconButton>
-
+            <IconButton
+            onClick={() => {
+              localStorage.removeItem("userData");
+              navigate("/");
+            }}
+          >
+            <ExitToAppIcon className={"icon" + (lightTheme ? "" : " dark")} />
+          </IconButton>
        </div>
     </div>
   )
