@@ -63,6 +63,7 @@ const Sidebar = () => {
             conversations = {conversations}
             refresh={refresh}
             setRefresh={setRefresh}
+            userData={userData}
         />
     </div>
   )
