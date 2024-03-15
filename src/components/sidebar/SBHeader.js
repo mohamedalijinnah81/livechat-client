@@ -27,7 +27,11 @@ const SBHeader = () => {
             </IconButton>
        </div> */}
        <div className="nav-links">
-            <IconButton>
+            <IconButton
+                onClick={() => {
+                    navigate("/app/welcome");
+                  }}
+            >
                 <AccountCircleIcon className={'icon' + ((lightTheme) ? '' : ' dark')} />
             </IconButton>
             <IconButton id='chat-icon' onClick={() => {

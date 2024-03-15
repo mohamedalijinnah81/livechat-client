@@ -90,6 +90,7 @@ const Users = () => {
                                     config
                                 );
                                 dispatch(refreshSidebarFun());
+                                nav(`/app/chat/${user._id}&${user.name}`)
                             }}
                         >
                             <p className={"convo-icon" + (lightTheme ? "" : " dark")}>{user.name[0].toUpperCase()}</p>
@@ -99,46 +100,6 @@ const Users = () => {
                         </motion.div>
                     );
                 })}
-                {/* <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div>
-                <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98}} className={'ug-listitem' + ((lightTheme) ? '' : ' dark')}>
-                    <p className='convo-icon'>T</p>
-                    <p className='convo-title'>Temp User</p>
-                </motion.div> */}
             </div>
         </motion.div>
     </AnimatePresence>

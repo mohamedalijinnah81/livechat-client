@@ -21,7 +21,7 @@ function App() {
         <Route path='/' element={<Login />} />
         <Route path="app" element={<MainContainer />}>
           <Route path="welcome" element={<WelcomePage />}></Route>
-          <Route path="chat" element={<WorkArea />}></Route>
+          <Route path="chat/:id" element={<WorkArea />}></Route>
           <Route path="users" element={<Users />}></Route>
           <Route path="groups" element={<Groups />}></Route>
           <Route path="creategroups" element={<CreateGroups />}></Route>

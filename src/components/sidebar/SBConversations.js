@@ -4,15 +4,19 @@ import '../../styles/DarkTheme.css'
 import ConversationItem from './ConversationItem.js'
 import { useSelector } from 'react-redux';
 
-const SBConversations = ({ conversations }) => {
+const SBConversations = ({ conversations, refresh, setRefresh }) => {
   const lightTheme = useSelector((state) => state.themeKey);
 
   return (
     <div className={'sb-conversations' + ((lightTheme) ? '' : ' dark')}>
-        {conversations.map((conversation) => (
-            <ConversationItem 
+        {conversations.map((conversation, index) => (
+          conversation.users.length === 1 ? (<div key={index}></div>) : <ConversationItem 
                 conversation = {conversation}
-                key={conversation.name}
+                key={index}
+                onClick={() => {
+                  console.log("Refresh fired from sidebar");
+                  setRefresh(!refresh)
+                }}
             />
         ))}
     </div>
