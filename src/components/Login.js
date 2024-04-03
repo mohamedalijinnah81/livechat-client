@@ -146,7 +146,7 @@ const Login = () => {
                 ) : null}
           </div>}
           {!showLogin && <div className="login-box">
-              <p>Login to your Account</p>
+              <p>Create a new account</p>
               <TextField 
                 onChange={changeHandler}
                 id="standard-basic"
